@@ -1,0 +1,21 @@
+<h2>Product</h2>
+
+<p>
+  <b>Name:</b> {{ name }}
+</p>
+
+<p>
+  <b>Price:</b> {{ price }}
+</p>
+
+{{#view 'listInline'}}
+    <li>
+
+        {{#linkTo "products"}}←All Products{{/linkTo}}
+    </li>
+    <li>
+        {{#linkTo "edit_product" model}}Edit{{/linkTo}}</li>
+    <li>
+        <a href="#" {{action "destroy"}}>Destroy</a>
+    </li>
+{{/view}}

@@ -1,0 +1,29 @@
+<h2>People</h2>
+
+{{#linkTo "new_person"}}New Person{{/linkTo}}
+
+{{#view 'table'}}
+  <thead>
+    <th>name</th>
+    <th>age</th>
+    <th>street</th>
+    <th>city</th>
+    <th>state</th>
+    <th>zipcode</th>
+  </thead>
+  <tbody>
+    {{#each person in controller}}
+    <tr>
+      <td>{{ person.name }}</td>
+      <td>{{ person.age }}</td>
+      <td>{{ person.street }}</td>
+      <td>{{ person.city }}</td>
+      <td>{{ person.state }}</td>
+      <td>{{ person.zipcode }}</td>
+      <td>{{#linkTo "person" person }}view{{/linkTo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+{{/view}}
+
+

@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Ember App</h1>
+
+    <nav>
+      {{#view 'listInline'}}
+          <li>{{#linkTo "index"}}Home{{/linkTo}}</li>
+          <li>{{#link-to 'people'}}People{{/link-to}}</li>
+          <li>{{#link-to 'products'}}Products{{/link-to}}</li>
+      {{/view}}
+
+    </nav>
+        {{outlet}}
+</div>
+

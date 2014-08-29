@@ -1,0 +1,40 @@
+<h2>Person</h2>
+
+<form {{action save on="submit"}}>
+
+  <p>
+    <label for="name">Name</label><br>
+    {{view Ember.TextField valueBinding="name" id="name"}}
+  </p>
+  
+  <p>
+    <label for="age">Age</label><br>
+    {{view Ember.TextField valueBinding="age" id="age"}}
+  </p>
+  
+  <p>
+    <label for="street">Street</label><br>
+    {{view Ember.TextField valueBinding="street" id="street"}}
+  </p>
+  
+  <p>
+    <label for="city">City</label><br>
+    {{view Ember.TextField valueBinding="city" id="city"}}
+  </p>
+  
+  <p>
+    <label for="state">State</label><br>
+    {{view Ember.TextField valueBinding="state" id="state"}}
+  </p>
+  
+  <p>
+    <label for="zipcode">Zipcode</label><br>
+    {{view Ember.TextField valueBinding="zipcode" id="zipcode"}}
+  </p>
+  
+  <p>
+    <button type="submit">Save</button>
+  </p>
+
+</form>
+
